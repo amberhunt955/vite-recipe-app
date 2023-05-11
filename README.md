@@ -24,7 +24,7 @@ This project is only in the VERY beginning stages. Not to worry, a beautiful UI 
 
 ## View Project
 
-This app is deployed on [Netlify](whatsfordinnertoday.netlify.app).
+This app is deployed on [Netlify](https://whatsfordinnertoday.netlify.app).
 
 ## Contact
 
