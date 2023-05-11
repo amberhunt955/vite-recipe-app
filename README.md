@@ -16,7 +16,15 @@ I decided to make this app for 3 main reasons:
 ## Technologies Used
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Built With Vite](http://ForTheBadge.com/images/badges/built-with-vite.svg)
+![Vite](https://img.shields.io/badge/-Vite-c1d6d6?logo=vite&style=for-the-badge)
+
+## Future Improvements
+
+This project is only in the VERY beginning stages. Not to worry, a beautiful UI is coming soon!
+
+## View Project
+
+This app is deployed on [GitHub Pages](https://amberhunt955.github.io/vite-recipe-app/).
 
 ## Contact
 

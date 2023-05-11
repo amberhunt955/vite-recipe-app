@@ -5,7 +5,7 @@ function NewRecipeButton({ getRandomMeal, setRecipe }) {
         setRecipe(newMeal);
     }
 
-    return <button onClick={handleClick}>New Recipe</button>
+    return <button className="button" onClick={handleClick}>New Recipe</button>
 }
 
 export default NewRecipeButton;

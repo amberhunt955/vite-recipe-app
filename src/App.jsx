@@ -23,11 +23,12 @@ function App() {
   }, []);
 
   return (
-    <>
-      <h1>Recipe App</h1>
-      {<RecipeCard recipe={recipe} />}
+    <main className="app">
+    <div className="content">
       <NewRecipeButton getRandomMeal={getRandomMeal} setRecipe={setRecipe} />
-    </>
+      {<RecipeCard recipe={recipe} />}
+    </div>
+    </main>
   );
 }
 
