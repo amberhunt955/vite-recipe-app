@@ -9,6 +9,7 @@ import NewRecipeButton from "./components/NewRecipeButton/NewRecipeButton";
 
 // styling
 import "./App.css";
+import "./App-mobile.css";
 
 function App() {
   const [recipe, setRecipe] = useState(null);
@@ -25,8 +26,8 @@ function App() {
   return (
     <main className="app">
     <div className="content">
-      <NewRecipeButton getRandomMeal={getRandomMeal} setRecipe={setRecipe} />
       {<RecipeCard recipe={recipe} />}
+      <NewRecipeButton getRandomMeal={getRandomMeal} setRecipe={setRecipe} />
     </div>
     </main>
   );
