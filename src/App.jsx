@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import { getRandomMeal } from "./services/mealdb";
 
 // components
+import Header from "./components/Header/Header";
 import RecipeCard from "./components/RecipeCard/RecipeCard";
 import NewRecipeButton from "./components/NewRecipeButton/NewRecipeButton";
 
@@ -18,16 +19,24 @@ function App() {
       const data = await getRandomMeal();
       console.log(data);
       setRecipe(data);
-    }
+    };
     fetchData();
   }, []);
 
   return (
     <main className="app">
-    <div className="content">
-      {<RecipeCard recipe={recipe} />}
-      <NewRecipeButton getRandomMeal={getRandomMeal} setRecipe={setRecipe} />
-    </div>
+      <section className="page">
+        {<Header recipe={recipe} />}
+        
+        <div className="content">
+          {<RecipeCard recipe={recipe} />}
+          
+          <NewRecipeButton
+            getRandomMeal={getRandomMeal}
+            setRecipe={setRecipe}
+          />
+        </div>
+      </section>
     </main>
   );
 }

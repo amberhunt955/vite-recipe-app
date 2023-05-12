@@ -1,3 +1,4 @@
+import styles from "./NewRecipeButton.module.css";
 
 function NewRecipeButton({ getRandomMeal, setRecipe }) {
     const handleClick = async () => {
@@ -5,7 +6,7 @@ function NewRecipeButton({ getRandomMeal, setRecipe }) {
         setRecipe(newMeal);
     }
 
-    return <button className="button" onClick={handleClick}>New Recipe</button>
+    return <button className={styles.NewRecipeButton} onClick={handleClick}>New Recipe</button>
 }
 
 export default NewRecipeButton;

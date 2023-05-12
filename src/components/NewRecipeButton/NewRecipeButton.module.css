@@ -1,0 +1,22 @@
+.NewRecipeButton {
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #f9f9f9;
+    color: #213547;
+    cursor: pointer;
+    height: fit-content;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  
+  .NewRecipeButton:hover {
+    border-color: #6b705c;
+  }
+  
+  .NewRecipeButton:focus,
+  .NewRecipeButton:focus-visible {
+    outline: 4px auto #6b705c;
+  } 

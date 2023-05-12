@@ -1,15 +1,10 @@
 .recipeCard {
   max-width: 500px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding-top: 10px;
-}
-
-.recipeContent {
-  display: flex;
   flex-direction: row;
+  align-items: center;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 .recipeInstructions {
@@ -20,24 +15,19 @@
 }
 
 @media screen and (max-width: 1000px) {
-    .recipeCard {
-        max-width: 90vw;
-    }
+  .recipeCard {
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+  }
 
-    .recipeContent {
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10px;
-        max-width: 350px;
-    }
+  .recipeCard img {
+    height: 35vh;
+    width: 90vw;
+    max-width: 500px;
+  }
 
-    .recipeContent img {
-        width: 90vw;
-        max-width: 350px;
-        height: 250px;
-    }
-
-    .recipeInstructions {
-        height: 250px;
-    }
+  .recipeInstructions {
+    height: 35vh;
+  }
 }
