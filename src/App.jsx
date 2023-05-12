@@ -9,7 +9,6 @@ import NewRecipeButton from "./components/NewRecipeButton/NewRecipeButton";
 
 // styling
 import "./App.css";
-import "./App-mobile.css";
 
 function App() {
   const [recipe, setRecipe] = useState(null);

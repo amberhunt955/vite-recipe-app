@@ -1,12 +1,14 @@
+import styles from "./RecipeCard.module.css"
+
 function RecipeCard({ recipe }) {
   console.log(recipe);
 
   const loaded = () => {
     return (
-      <div className="recipeCard">
+      <div className={styles.recipeCard}>
         <h1>{recipe.strMeal}</h1>
 
-        <div className="recipeContent">
+        <div className={styles.recipeContent}>
           <img
             src={`${recipe.strMealThumb}`}
             alt={`${recipe.strMeal}`}
@@ -14,7 +16,7 @@ function RecipeCard({ recipe }) {
             height="300px"
           />
 
-          <p className="recipeInstructions">
+          <p className={styles.recipeInstructions}>
             <b>INGREDIENTS:</b>
             {recipe.strIngredient1 ? <li>{recipe.strIngredient1}, {recipe.strMeasure1}</li> : "" }
             {recipe.strIngredient2 ? <li>{recipe.strIngredient2}, {recipe.strMeasure2}</li> : "" }
@@ -36,7 +38,8 @@ function RecipeCard({ recipe }) {
             {recipe.strIngredient18 ? <li>{recipe.strIngredient18}, {recipe.strMeasure18}</li> : "" }
             {recipe.strIngredient19 ? <li>{recipe.strIngredient19}, {recipe.strMeasure19}</li> : "" }
             {recipe.strIngredient20 ? <li>{recipe.strIngredient20}, {recipe.strMeasure20}</li> : "" }
-            <b>INSTRUCTIONS:</b> {recipe.strInstructions}
+            
+            <br/><b>INSTRUCTIONS:</b> {recipe.strInstructions}
           </p>
         </div>
       </div>
