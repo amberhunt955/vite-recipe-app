@@ -1,6 +1,10 @@
-<h1 align="center" id="readme-top">Recipe App</h1>
+<h1 align="center" id="readme-top">Menu Magic - A Recipe App</h1>
 
 <p align="center">This is a simple app. Click on a button and a random recipe will display!</p>
+
+## Screenshot
+
+<img width="565" alt="menu magic" src="https://github.com/amberhunt955/vite-recipe-app/assets/122638466/2ecbe708-e3aa-4fe5-965a-588a21eda176">
 
 ## Purpose
 
@@ -20,7 +24,7 @@ I decided to make this app for 3 main reasons:
 
 ## Future Improvements
 
-This project is only in the VERY beginning stages. Not to worry, a beautiful UI is coming soon!
+I'd love to add login functionality, connect this project to a database and allow users to save their favorite recipes.
 
 ## View Project
 
